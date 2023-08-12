@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+fieldset,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+body {
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #153236;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-button {
+  max-width: 380px;
+  padding: 10px;
+  width: 100%;
+  height: 73px;
+  border-radius: 40px;
+  border: 1px solid #8eecf9;
+  background-color: #9ceef9;
+  box-shadow: 0px 16px 16px 0px #c2f8ff;
+  color: #000;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1;
+  transition: background-color 0.3s ease-in;
+}
+
+.main-button:hover {
+  background-color: #8be3ef;
+}
+
+@media (hover: hover) {
+  .main-button:hover {
+    background-color: #8be3ef;
+  }
+}
+
+.main-button:focus {
+  outline: 1px solid #59d7e9;
+}
+
+.main-button:disabled {
+  background-color: #d7d7d7;
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-button {
+    height: 50px;
+  }
+}
